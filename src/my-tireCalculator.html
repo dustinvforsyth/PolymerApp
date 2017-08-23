@@ -1,0 +1,42 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../src/shared-styles.html">
+
+<dom-module id="my-tireCalculator">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+      .inputs {
+        width: 75px;
+      }
+      .input-groups {
+        display: -webkit-box !important;
+
+      }
+    </style>
+
+    <form>
+        <label>Original Tire Size</label>
+        <div class="input-groups">
+        <paper-input class="inputs" always-float-label label="Height"></paper-input>
+        <paper-input class="inputs" always-float-label label="Width"></paper-input>
+        <paper-input class="inputs" always-float-label label="Rim Size"></paper-input>
+        </div>
+        <label>New Tire Size</label>
+        <div class="input-groups">
+        <paper-input class="inputs" always-float-label label="Height"></paper-input>
+        <paper-input class="inputs" always-float-label label="Width"></paper-input>
+        <paper-input class="inputs" always-float-label label="Rim Size"></paper-input>
+        </div>
+    </form>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-tireCalculator',
+    });
+  </script>
+</dom-module>

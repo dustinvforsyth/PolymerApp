@@ -1,0 +1,22 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+
+<dom-module id="my-profile">
+    <template>
+        <style>
+            :host {
+                display: block;
+
+                padding: 16px;
+            }
+        </style>
+
+        <h1>My Profile</h1>
+        <paper-slider min="-100" max="100" value="50"></paper-slider>
+    </template>
+    <script>
+        Polymer({
+            is: 'my-profile'
+        });
+    </script>
+</dom-module>
